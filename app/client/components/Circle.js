@@ -3,55 +3,7 @@ import './Circle.css';
 
 var ReactHighcharts = require('react-highcharts');
 
-var config = {
-  chart: {
-    plotBackgroundColor: null,
-    plotBorderWidth: 0,
-    plotShadow: false
-  },
-  title: {
-    text: '',
-  },
-  tooltip: {
-    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-  },
-  plotOptions: {
-    pie: {
-      dataLabels: {
-        enabled: true,
-        distance: -50,
-        style: {
-          fontWeight: 'bold',
-          color: 'white'
-        }
-      },
-      startAngle: 180,
-      endAngle: 250,
-      center: ['50%', '50%']
-    }
-  },
-  series: [{
-    type: 'pie',
-    name: 'Browser share',
-    innerSize: '50%',
-    data: [
-      ['Firefox', 10.38],
-      ['IE', 56.33],
-      ['Chrome', 24.03],
-      ['Safari', 4.77],
-      ['Opera', 0.91],
-      {
-        name: 'Proprietary or Undetectable',
-        y: 0.2,
-        dataLabels: {
-          enabled: false
-        }
-      }
-    ]
-  }]
-};
-
-var config2 = {
+var config_left = {
   chart: {
     plotBackgroundColor: null,
     plotBorderWidth: 0,
@@ -81,16 +33,72 @@ var config2 = {
   series: [{
     type: 'pie',
     name: 'Browser share1',
-    innerSize: '50%',
+    innerSize: '62.5%',
     data: [
-      ['Firefox', 10.38],
-      ['IE', 56.33],
-      ['Chrome', 24.03],
-      ['Safari', 4.77],
-      ['Opera', 0.91],
       {
-        name: 'Proprietary or Undetectable',
-        y: 0.2,
+        name: 'Fitness',
+        y: 25,
+        color: '#69F0AE',
+        dataLabels: {
+          enabled: false
+        }
+      },
+      {
+        name: 'Nutrition',
+        y: 30,
+        color: '#00E676',
+        dataLabels: {
+          enabled: false
+        }
+      },
+      {
+        name: 'Lifestyle',
+        y: 10,
+        color: '#00C853',
+        dataLabels: {
+          enabled: false
+        }
+      }
+    ]
+  }]
+};
+
+var config_right = {
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: 0,
+    plotShadow: false
+  },
+  title: {
+    text: '',
+  },
+  tooltip: {
+    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  plotOptions: {
+    pie: {
+      dataLabels: {
+        enabled: true,
+        distance: -50,
+        style: {
+          fontWeight: 'bold',
+          color: 'white'
+        }
+      },
+      startAngle: 180,
+      endAngle: 250,
+      center: ['50%', '50%']
+    }
+  },
+  series: [{
+    type: 'pie',
+    name: 'Browser share',
+    innerSize: '62.5%',
+    data: [
+      {
+        name: '',
+        y: 100,
+        color: '#02BBD1',
         dataLabels: {
           enabled: false
         }
@@ -106,12 +114,12 @@ export class Circle extends React.Component {
       <div className='grid-wrapper'>
         <div className='outer'>
           <div className='inner'>
-            <ReactHighcharts config={config2} neverReflow={true}></ReactHighcharts>
+            <ReactHighcharts config={config_left} neverReflow={true}></ReactHighcharts>
           </div>
         </div>
         <div className='outer'>
           <div className='inner flip right'>
-            <ReactHighcharts config={config} neverReflow={true}></ReactHighcharts>
+            <ReactHighcharts config={config_right} neverReflow={true}></ReactHighcharts>
           </div>
         </div>
       </div>
