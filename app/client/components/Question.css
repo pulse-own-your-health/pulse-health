@@ -17,7 +17,9 @@
 }
 
 .questionText {
-  color: lightgray;
+  color: black;
+  font-weight: bold;
+  font-size: 150%;
 }
 
 .periodText {
