@@ -5,9 +5,12 @@
   grid-template-columns: 1fr;
 }
 
+.application * {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .application > .header, .application > .footer {
-  font-family: sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   line-height: 3em;
   height: 3em;
