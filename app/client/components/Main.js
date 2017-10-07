@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Link} from 'react-router';
 import './Main.css';
 
 
@@ -9,8 +10,8 @@ export class Main extends React.Component {
         return (
             <div className="main">
                 <div className="header">
-                    <span>Your Impact</span>
-                    <span>Body Facts</span>
+                    <span><Link to="/impact">Your Impact</Link></span>
+                    <span><Link to="/facts">Body Facts</Link></span>
                 </div>
                 <div className="content">
                     <Circle score={60}/>
