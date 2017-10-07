@@ -68,3 +68,17 @@
   background: linear-gradient(to bottom, #02bbd1 0%,#02bbd1 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02bbd1', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
+
+.pulse-footer-body {
+  margin-bottom: 47px;
+}
+
+.pulse-footer {
+  position: fixed;
+  height: 47px !important;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+}

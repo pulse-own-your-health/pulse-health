@@ -19,7 +19,7 @@ export class App extends React.Component {
             <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"/>
           </Helmet>
           <ApplicationHeader title="Pulse Health"/>
-          <div className="content">
+          <div className="content pulse-footer-body">
               {this.props.children}
           </div>
           <ApplicationFooter/>
@@ -34,7 +34,7 @@ export class ApplicationHeader extends React.Component {
         return (
             <div className="header">
                 <span>{this.props.title} </span>
-                <img src={logo} height="26px"></img>
+                <img src={logo} height="26px"/>
             </div>
         );
     }
@@ -44,7 +44,7 @@ export class ApplicationHeader extends React.Component {
 export class ApplicationFooter extends React.Component {
     render() {
         return (
-            <div className="footer">
+            <div className="footer pulse-footer">
                 <FontAwesome name="dashcube"/>
                 <FontAwesome name="bar-chart"/>
                 <AddActionIcon width="20vw" height="20vw"/>
