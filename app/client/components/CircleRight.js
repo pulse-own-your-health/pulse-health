@@ -3,7 +3,7 @@ import './Circle.css';
 
 var ReactHighcharts = require('react-highcharts');
 
-var config_right = {
+var config = {
     chart: {
         plotBackgroundColor: null,
         plotBorderWidth: 0,
@@ -51,7 +51,7 @@ export class CircleRight extends React.Component {
         return (
             <div className='outer'>
                 <div className='inner flip right'>
-                    <ReactHighcharts config={config_right} neverReflow={true}/>
+                    <ReactHighcharts config={config} neverReflow={true}/>
                 </div>
             </div>
         );

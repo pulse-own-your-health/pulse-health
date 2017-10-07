@@ -7,12 +7,14 @@ import { Impact } from './components/Impact.js';
 import { NotFound } from './components/NotFound.js';
 import { Circle } from "./components/Circle";
 import { Question } from './components/Question.js';
+import { RiskGraph } from "./components/RiskGraph";
 
 export const routes = (
   <Route path='/' component={App}>
     <IndexRoute title='App' component={Main} />
     <Route path='impact' title='Impact' component={Impact} />
-    <Route path='circle' title='Circle' component={Circle} />
+      <Route path='circle' title='Circle' component={Circle} />
+      <Route path='riskgraph' title='Risk Graph' component={RiskGraph} />
     <Route path='questions' title='Questions' component={Question} />
     <Route path='*' title='404: Not Found' component={NotFound} />
   </Route>
