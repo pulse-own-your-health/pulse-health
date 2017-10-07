@@ -45,11 +45,11 @@ export class ApplicationFooter extends React.Component {
     render() {
       return (
         <div className="footer pulse-footer">
-          <FontAwesome name="user"/>
-          <FontAwesome name="bar-chart"/>
+          <FontAwesome className="pulse-footer-icon" name="user"/>
+          <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
           <AddActionIcon width="20vw" height="20vw"/>
-          <FontAwesome name="trophy"/>
-          <FontAwesome name="cloud-upload" onClick="" />
+          <FontAwesome className="pulse-footer-icon" name="trophy"/>
+          <FontAwesome className="pulse-footer-icon" name="cloud-upload" />
         </div>
         );
     }
@@ -67,7 +67,8 @@ export class ApplicationFooter extends React.Component {
   }
 
   cloudClick() {
-    
+    console.log("CLICKED CLOUD");
+    // window.location = "/cloud";
   }
 }
 
@@ -80,11 +81,11 @@ export class AddActionIcon extends React.Component {
         };
         return (
             <div className="add" style={style}>
-                <svg width={this.props.width} height={this.props.height}
-                    viewBox="0 0 100 100">
+                <svg width={this.props.width} height={this.props.height} viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="45" fill="#F2F2F2" stroke="#CECECE"/>
-                    <text x="50" y="50" textAnchor="middle" alignmentBaseline="central"
-                        fontSize="15vw" fill="#777">+</text>
+                    <text x="50" y="42" textAnchor="middle" alignmentBaseline="central" fontSize="18vw" fill="#777">
+                        +
+                    </text>
                 </svg>
             </div>
         );
