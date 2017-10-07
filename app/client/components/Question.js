@@ -98,7 +98,7 @@ export class Question extends React.Component {
 
   finishQuestionsClick() {
     // Switch to home page
-    window.location = '/';
+    window.location = "/";
   }
 
   render() {

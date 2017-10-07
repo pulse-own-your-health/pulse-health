@@ -49,7 +49,7 @@ export class ApplicationFooter extends React.Component {
           <FontAwesome name="bar-chart"/>
           <AddActionIcon width="20vw" height="20vw"/>
           <FontAwesome name="trophy"/>
-          <FontAwesome name="cloud-upload" onClick="" />
+          <FontAwesome name="cloud-upload" onClick={this.cloudClick()} />
         </div>
         );
     }
@@ -67,7 +67,7 @@ export class ApplicationFooter extends React.Component {
   }
 
   cloudClick() {
-    
+    // window.location = "/cloud";
   }
 }
 
