@@ -5,6 +5,7 @@ import {Link, IndexLink} from 'react-router';
 import {Helmet} from 'react-helmet';
 import './App.css';
 import './favicon.ico';
+import questions from './Question.js';
 
 
 export class App extends React.Component {
@@ -32,11 +33,25 @@ export class MainScreen extends React.Component {
 
 }
 
-
-export class ApplicationBar extends React.Component {
-
-    render() {
-        return <div classname="appbar">{this.props.title}</div>;
-    }
-
+/**
+ * NOTE: As of 2015-11-09 react-transform does not support a functional
+ * component as the base compoenent that's passed to ReactDOM.render, so we
+ * still use createClass here.
+ */
+export class App extends React.Component {
+  static propTypes = {
+    children: React.PropTypes.node,
+  }
+  render() {
+    return (
+      <div className={cx('App')}>
+        <nav className={cx('nav')}>
+          <IndexLink to='/' activeClassName={cx('active')}>Home</IndexLink>
+          <Link to='/about' activeClassName={cx('active')}>About</Link>
+          <Link to='/questions' activeClassName={cx('active')}>Questions </Link>
+        </nav>
+        {this.props.children}
+      </div>
+    );
+  }
 }
