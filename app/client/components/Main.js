@@ -15,6 +15,9 @@ export class Main extends React.Component {
                 <div className="content">
                     <Circle score={60}/>
                 </div>
+                <div className="footer">
+                    <span>Footer here</span>
+                </div>
             </div>
         );
     }
@@ -26,23 +29,21 @@ export class Circle extends React.Component {
 
     render() {
         let {width, height} = this.props;
-        if (width === undefined) width = "128px";
-        if (height === undefined) height = "128px";
+        if (width === undefined) width = "100%";
+        if (height === undefined) height = "100vw";
         return (
-            <div className="circle">
-                <svg width={width} height={height}>
-                    <text x="50%" y="30%" textAnchor="middle"
-                          alignmentBaseline="central" fontSize="12px">
-                        your score
-                    </text>
-                    <text x="50%" y="60%" textAnchor="middle"
-                          alignmentBaseline="central" fontSize="50px">
-                        {this.props.score}
-                    </text>
-                    <circle cx="50%" cy="50%" r="40%" fill="transparent"
-                            stroke="black" strokeWidth="3"/>
-                </svg>
-            </div>
+            <svg className="circle" width={width} height={height}>
+                <text x="50%" y="30%" textAnchor="middle"
+                        alignmentBaseline="central" fontSize="4vw">
+                    your score
+                </text>
+                <text x="50%" y="60%" textAnchor="middle"
+                        alignmentBaseline="central" fontSize="25vw">
+                    {this.props.score}
+                </text>
+                <circle cx="50%" cy="50%" r="40%" fill="transparent"
+                        stroke="black" strokeWidth="3"/>
+            </svg>
         );
     }
 

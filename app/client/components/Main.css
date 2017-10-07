@@ -1,5 +1,9 @@
 
 .main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100%;
 }
 
 .main .header {
@@ -17,4 +21,12 @@
 
 .main .header span:nth-child(1) {
     border-right: 1px solid #CCCCCC;
+}
+
+.main .content {
+}
+
+.main .footer {
+    line-height: 40px;
+    text-align: center;
 }

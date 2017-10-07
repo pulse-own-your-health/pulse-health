@@ -16,7 +16,7 @@ export class App extends React.Component {
                     <meta name="viewport" content="width=device-width; initial-scale=1"/>
                 </Helmet>
                 <ApplicationBar title="Pulse Health"/>
-                <div class="content">
+                <div className="content">
                     {this.props.children}
                 </div>
             </div>

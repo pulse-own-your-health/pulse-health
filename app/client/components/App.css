@@ -1,8 +1,12 @@
 
 .application {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
 }
 
-.application .bar {
+.application .bar, .application .footer {
   font-family: sans-serif;
   font-size: 14px;
   text-align: center;
@@ -11,6 +15,12 @@
   background-color: #F1F1F1;
   color: #0086E6;
   border-bottom: 1px solid #CECECE;
+}
+
+.application .footer {
+  color: inherit;
+  border-top: 1px solid #CECECE;
+  border-bottom: none;
 }
 
 .application .content {
