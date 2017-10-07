@@ -32,20 +32,21 @@ export class Question extends React.Component {
     this.getButton = this.getButton.bind(this);
   }
 
-  getImage() {
-    return this.getData().image;
+  handleChange(event) {
+    this.setState({amount: event.target.value});
   }
 
-  getQuestion() {
-    return this.getData().text;
-  }
+  getImage() { return this.getData().image; }
+  getQuestion() { return this.getData().text; }
+  getPeriod() { return this.getData().period; }
 
   getData() {
     var timesADay = "times a day";
     var timesAWeek = "times a week";
 
     var data = {};
-    switch(this.page){
+
+    switch(this.state.page){
     case 1:
       data.image = smoking;
       data.text = "Do you smoke?";
@@ -83,17 +84,63 @@ export class Question extends React.Component {
     return data;
   }
 
+  nextQuestionClick() {
+    this.state.reply[this.state.page] = this.state.amount;
+    console.log(this.state);
+
+    this.setState(
+      {
+        page: this.state.page + 1,
+        amount: 0
+      }
+    );
+  }
+
+  finishQuestionsClick() {
+    // Switch to home page
+    window.location = '/';
+  }
+
   render() {
     return (
-      <div>
+      <div className="container">
         <div className="col-xs-1"></div>
         <div className="col-xs-10">
-          <img src={this.getImage()} />
-          <h4 className='centerText'> {this.getQuestion()}</h4>
+          <div className="row">
+            <div className="questionImageContainer">
+              <img src={this.getImage()} />
+            </div>
+          </div>
+          <div className="row">
+            <h4 className="centerText questionText">
+              {this.getQuestion()}
+            </h4>
+          </div>
+          <div className="row">
+            <h4 className="centerText periodText">
+              <span id="amount">{this.state.amount}</span> {this.getPeriod()}
+            </h4>
+          </div>
+          <div className="row">
+            <input type="range" min="0" max="14" value={this.state.amount} step="1" onChange={this.handleChange} />
+          </div>
+          <div className="row">
+            <div className="centerBox" style={{ padding: "15px 0 0 0" }}>
+              { this.getButton() }
+            </div>
+          </div>
         </div>
         <div className="col-xs-1"></div>
       </div>
     );
+  }
+
+  getButton() {
+    if(this.state.page - 1 < this.maxPage - 1) {
+      return (<button type="button" onClick={this.nextQuestionClick}>Next question</button>);
+    } else {
+      return (<input type="submit" value="Finish" onClick={this.finishQuestionsClick} />);
+    }
   }
 
 }
