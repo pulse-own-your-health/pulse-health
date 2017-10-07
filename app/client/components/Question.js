@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import smoking from '../assets/smoking.png';
-import alcohol from '../assets/alcohol.png';
-import meat from '../assets/meat.png';
-import stress from '../assets/stress.png';
-import activity from '../assets/activity.png';
-import city from '../assets/city.png';
-import error from '../assets/error.png';
+import smoking from "../assets/smoking.png";
+import alcohol from "../assets/alcohol.png";
+import meat from "../assets/meat.png";
+import stress from "../assets/stress.png";
+import activity from "../assets/activity.png";
+import city from "../assets/city.png";
+import error from "../assets/error.png";
 
-import './App.css';
-import 'react-bootstrap/dist/react-bootstrap.js';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import "./Question.css";
+import "react-bootstrap/dist/react-bootstrap.js";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap-theme.css";
 
 export class Question extends React.Component {
 
@@ -37,45 +37,45 @@ export class Question extends React.Component {
   }
 
   getData() {
-    var timesADay = 'times a day';
-    var timesAWeek = 'times a week';
-    var fileName = '../assets/';
+    var timesADay = "times a day";
+    var timesAWeek = "times a week";
+
     var data = {};
     switch(this.page){
     case 1:
       data.image = smoking;
-      data.text = 'Do you smoke?';
+      data.text = "Do you smoke?";
       data.period = timesADay;
       break;
     case 2:
       data.image = alcohol;
-      data.text = 'Do you drink?';
+      data.text = "Do you drink?";
       data.period = timesAWeek;
       break;
     case 3:
       data.image = meat;
-      data.text = 'Do you eat red meat?';
+      data.text = "Do you eat red meat?";
       data.period = timesAWeek;
       break;
     case 4:
       data.image = stress;
-      data.text = 'How often do you feel stressed??';
+      data.text = "How often do you feel stressed?";
       data.period = timesADay;
       break;
     case 5:
       data.image = activity;
-      data.text = 'How often do you do sports?';
+      data.text = "How often do you do sports?";
       data.period = timesAWeek;
       break;
     case 6:
       data.image = city;
-      data.text = 'How much time do you spend in the city?';
+      data.text = "How much time do you spend in the city?";
       data.period = timesAWeek;
       break;
     default:
       data.image = error;
     }
-    
+
     return data;
   }
 
