@@ -74,7 +74,7 @@ export class AddActionIcon extends React.Component {
                     viewBox="0 0 100 100">
                     <circle cx="50" cy="50" r="45" fill="#F2F2F2" stroke="#CECECE"/>
                     <text x="50" y="50" textAnchor="middle" alignmentBaseline="central"
-                        fontSize="15vw">+</text>
+                        fontSize="15vw" fill="#777">+</text>
                 </svg>
             </div>
         );
