@@ -29,12 +29,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.application > .footer > .fa {
-  max-height: 3em;
-  line-height: 3em;
-  color: gray;
-}
-
 /* Override Bootstrap defaults */
 
 .btn {
@@ -80,4 +74,10 @@
   left: 0;
   right: 0;
   margin-bottom: 0;
+}
+
+.pulse-footer-icon {
+  max-height: 3em;
+  line-height: 3em !important;
+  color: gray;
 }
