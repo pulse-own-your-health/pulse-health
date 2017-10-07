@@ -1,12 +1,13 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import { App, About, Home, NotFound } from './components/App.js';
+import { App } from './components/App.js';
+import { Main } from './components/Main.js';
+import { NotFound } from './components/NotFound.js';
 
 export const routes = (
   <Route path='/' component={App}>
-    <IndexRoute title='App' component={Home} />
-    <Route path='about' title='App - About' component={About} />
+    <IndexRoute title='App' component={Main} />
     <Route path='*' title='404: Not Found' component={NotFound} />
   </Route>
 );
