@@ -47,7 +47,33 @@ export class ApplicationFooter extends React.Component {
     render() {
         return (
             <div className="footer">
-                <span>footer here.</span>
+                <div className="overview">Overview</div>
+                <div className="stats">Stats</div>
+                <AddActionIcon width="20vw" height="20vw"/>
+                <div className="challenges">Challenges</div>
+                <div className="profile">Profile</div>
+            </div>
+        );
+    }
+
+}
+
+
+export class AddActionIcon extends React.Component {
+
+    render() {
+        let style = {
+            position: "relative",
+            marginTop: "-10vw"
+        };
+        return (
+            <div className="add" style={style}>
+                <svg width={this.props.width} height={this.props.height}
+                    viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#F2F2F2" stroke="#CECECE"/>
+                    <text x="50" y="50" textAnchor="middle" alignmentBaseline="central"
+                        fontSize="15vw">+</text>
+                </svg>
             </div>
         );
     }
