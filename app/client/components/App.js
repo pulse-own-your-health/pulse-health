@@ -10,28 +10,26 @@ import logo from '../../../.assets/pulse-logo.png';
 
 
 export class App extends React.Component {
-
     render() {
-        return (
-            <div className="application">
-                <Helmet>
-                    <meta name="viewport" content="width=device-width; initial-scale=1"/>
-                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-                </Helmet>
-                <ApplicationHeader title="Pulse Health"/>
-                <div className="content">
-                    {this.props.children}
-                </div>
-                <ApplicationFooter/>
-            </div>
-        );
+      return (
+        <div className="application">
+          <Helmet>
+            <meta name="viewport" content="width=device-width; initial-scale=1"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"/>
+          </Helmet>
+          <ApplicationHeader title="Pulse Health"/>
+          <div className="content">
+              {this.props.children}
+          </div>
+          <ApplicationFooter/>
+        </div>
+      );
     }
-
 }
 
 
 export class ApplicationHeader extends React.Component {
-
     render() {
         return (
             <div className="header">
@@ -40,12 +38,10 @@ export class ApplicationHeader extends React.Component {
             </div>
         );
     }
-
 }
 
 
 export class ApplicationFooter extends React.Component {
-
     render() {
         return (
             <div className="footer">
@@ -57,12 +53,10 @@ export class ApplicationFooter extends React.Component {
             </div>
         );
     }
-
 }
 
 
 export class AddActionIcon extends React.Component {
-
     render() {
         let style = {
             position: "relative",
@@ -79,5 +73,4 @@ export class AddActionIcon extends React.Component {
             </div>
         );
     }
-
 }
