@@ -20,4 +20,14 @@
   color: inherit;
   border-top: 1px solid #CECECE;
   border-bottom: none;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.application > .footer > .fa {
+  max-height: 3em;
+  line-height: 3em;
+  color: gray;
 }
