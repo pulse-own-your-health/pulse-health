@@ -1,0 +1,78 @@
+/* New styles */
+
+#header-logo {
+  height: 40px;
+  padding-top: 8px;
+}
+
+.header-text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.items-list {
+  list-style-type: none;
+}
+
+.items-list li {
+  padding-top: 50px;
+  padding-bottom: 45px;
+  margin: 2px 0;
+  border-bottom: 5px inset grey;
+  overflow: hidden;
+}
+
+.items-list li:first-child {
+  padding-top: 0;
+}
+
+.items-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.newsbox-cropper {
+  width: 140px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsbox-reuters .label-default {
+  background-color: #ff8000;
+}
+
+footer {
+  padding: 25px;
+  color: grey;
+  text-align: center;
+}
+
+/* Overwrite styles */
+
+.panel {
+  border-radius: 0;
+}
+
+/* Predefined */
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
