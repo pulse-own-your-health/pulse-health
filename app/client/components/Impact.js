@@ -1,7 +1,7 @@
 import React from 'react';
 import './Impact.css';
 
-import {Circle} from './Main';
+import {CircleLeft} from "./CircleLeft";
 
 
 export class Impact extends React.Component {
@@ -15,7 +15,7 @@ export class Impact extends React.Component {
                 <div className="balance">
                     <p>Beans at macchiato saucer con panna percolator macchiato caramelization cappuccino wings sweet
                         cultivar. White dripper mug, wings, cup, et dark spoon cappuccino arabica.</p>
-                    <div><i>Circle here.</i></div>
+                    <CircleLeft/>
                 </div>
                 <div className="sections">
                     <div className="section">
