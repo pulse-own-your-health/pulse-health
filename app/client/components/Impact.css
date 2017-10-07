@@ -21,13 +21,15 @@
 }
 
 .impact-progress {
-    height: 3px;
+    height: 15px;
     width: 100%;
     background-color: #B3B3B3;
+    border-radius: 10px;
 }
 
 .impact-progress > .fill {
-    height: 3px;
+    height: 15px;
+    border-radius: 10px;
 }
 
 .impact-progress > .Fitness {
@@ -39,5 +41,5 @@
 }
 
 .impact-progress > .Lifestyle {
-   background-color: #00C853;
+    background-color: #00C853;
 }
