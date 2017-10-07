@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 import classnames from 'classnames/bind';
+import questions from './Question.js';
 
 // Using CSS Modules so we assign the styles to a variable
 import s from './App.styl';
@@ -67,6 +68,7 @@ export class App extends React.Component {
         <nav className={cx('nav')}>
           <IndexLink to='/' activeClassName={cx('active')}>Home</IndexLink>
           <Link to='/about' activeClassName={cx('active')}>About</Link>
+          <Link to='/questions' activeClassName={cx('active')}>Questions </Link>
         </nav>
         {this.props.children}
       </div>
