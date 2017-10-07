@@ -1,0 +1,20 @@
+
+.main {
+}
+
+.main .header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: gray;
+}
+
+.main .header span {
+    font-size: 12px;
+    line-height: 2em;
+    background-color: #E7E7E7;
+    text-align: center;
+}
+
+.main .header span:nth-child(1) {
+    border-right: 1px solid #CCCCCC;
+}

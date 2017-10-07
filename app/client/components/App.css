@@ -2,7 +2,16 @@
 .application {
 }
 
-.application .appbar {
-  font-family: "Courier";
-  font-size: 200%;
+.application .bar {
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 3em;
+  height: 3em;
+  background-color: #F1F1F1;
+  color: #0086E6;
+  border-bottom: 1px solid #CECECE;
+}
+
+.application .content {
 }

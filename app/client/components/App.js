@@ -16,18 +16,11 @@ export class App extends React.Component {
                     <meta name="viewport" content="width=device-width; initial-scale=1"/>
                 </Helmet>
                 <ApplicationBar title="Pulse Health"/>
-                <div id="app_content">{this.props.children}</div>
+                <div class="content">
+                    {this.props.children}
+                </div>
             </div>
         );
-    }
-
-}
-
-
-export class MainScreen extends React.Component {
-
-    render() {
-        return <div>Circle here</div>;
     }
 
 }
@@ -36,7 +29,7 @@ export class MainScreen extends React.Component {
 export class ApplicationBar extends React.Component {
 
     render() {
-        return <div classname="appbar">{this.props.title}</div>;
+        return <div className="bar">{this.props.title}</div>;
     }
 
 }
