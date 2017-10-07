@@ -5,6 +5,7 @@ import {Link, IndexLink} from 'react-router';
 import {Helmet} from 'react-helmet';
 import './App.css';
 import './favicon.ico';
+import logo from '../../../.assets/pulse-logo.png';
 
 
 export class App extends React.Component {
@@ -29,7 +30,10 @@ export class App extends React.Component {
 export class ApplicationBar extends React.Component {
 
     render() {
-        return <div className="bar">{this.props.title}</div>;
+        return <div className="bar">
+            <span>{this.props.title} </span>
+            <img src={logo} height="26px"></img>
+        </div>;
     }
 
 }
