@@ -17,15 +17,19 @@ export class Question extends React.Component {
 
   constructor(props, context) {
     super(props, context);
-    this.page = 1;
-  }
+    this.state =
+    {
+      page : 1,
+      amount : "0",
+      reply : {}
+    };
+    this.maxPage = 6;
 
-  getPeriod() {
-    return this.getData().period;
-  }
+    this.handleChange = this.handleChange.bind(this);
+    this.nextQuestionClick = this.nextQuestionClick.bind(this);
+    this.finishQuestionsClick = this.finishQuestionsClick.bind(this);
 
-  getNumber() {
-    return 0;
+    this.getButton = this.getButton.bind(this);
   }
 
   getImage() {
