@@ -27,6 +27,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.application > .footer > div {
+.application > .footer > .fa {
   max-height: 3em;
+  line-height: 3em;
 }

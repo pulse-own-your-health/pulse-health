@@ -1,6 +1,7 @@
 /* React component entry-point. */
 
 import React from 'react';
+import FontAwesome from 'react-fontawesome';
 import {Link, IndexLink} from 'react-router';
 import {Helmet} from 'react-helmet';
 import './App.css';
@@ -15,6 +16,7 @@ export class App extends React.Component {
             <div className="application">
                 <Helmet>
                     <meta name="viewport" content="width=device-width; initial-scale=1"/>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
                 </Helmet>
                 <ApplicationHeader title="Pulse Health"/>
                 <div className="content">
@@ -47,11 +49,11 @@ export class ApplicationFooter extends React.Component {
     render() {
         return (
             <div className="footer">
-                <div className="overview">Overview</div>
-                <div className="stats">Stats</div>
+                <FontAwesome name="dashcube"/>
+                <FontAwesome name="bar-chart"/>
                 <AddActionIcon width="20vw" height="20vw"/>
-                <div className="challenges">Challenges</div>
-                <div className="profile">Profile</div>
+                <FontAwesome name="trophy"/>
+                <FontAwesome name="user"/>
             </div>
         );
     }
