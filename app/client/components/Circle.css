@@ -1,34 +1,34 @@
 .flip {
-  -moz-transform: scaleX(-1);    /* Gecko */
-  -o-transform: scaleX(-1);      /* Opera */
-  -webkit-transform: scaleX(-1); /* Webkit */
-  transform: scaleX(-1);         /* Standard */
-  filter: FlipH;                 /* IE 6/7/8 */
+    -moz-transform: scaleX(-1);    /* Gecko */
+    -o-transform: scaleX(-1);      /* Opera */
+    -webkit-transform: scaleX(-1); /* Webkit */
+    transform: scaleX(-1);         /* Standard */
+    filter: FlipH;                 /* IE 6/7/8 */
 }
 
 .outer {
-  width: 250px;
-  overflow: HIDDEN;
+    width: 250px;
+    overflow: HIDDEN;
 }
 
 .inner {
-  width: 500px;
+    width: 500px;
 }
 
 .left {
-  grid-area: left;
+    grid-area: left;
 }
 
 .right {
-  margin-left: -250px;
-  grid-area: right;
+    margin-left: -250px;
+    grid-area: right;
 }
 
 .grid-wrapper {
-  display: grid;
-  grid-gap: 0;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1frs;
-  grid-template-areas: "left right";
-  width: 500px;
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1frs;
+    grid-template-areas: "left right";
+    width: 500px;
 }

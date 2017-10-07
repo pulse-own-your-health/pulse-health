@@ -18,15 +18,29 @@
     padding: 0.5em;
     background-color: #F1F1F1;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .impact-progress {
-    height: 3px;
+    height: 15px;
     width: 100%;
     background-color: #B3B3B3;
+    border-radius: 10px;
 }
 
 .impact-progress > .fill {
-    height: 3px;
-    background-color: #6AFF6A;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.impact-progress > .Fitness {
+    background-color: #69F0AE;
+}
+
+.impact-progress > .Nutrition {
+    background-color: #00E676;
+}
+
+.impact-progress > .Lifestyle {
+    background-color: #00C853;
 }

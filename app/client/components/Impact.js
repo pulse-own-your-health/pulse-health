@@ -20,15 +20,15 @@ export class Impact extends React.Component {
                 <div className="sections">
                     <div className="section">
                         <p>Fitness</p>
-                        <ProgressBar fill={0.3}/>
+                        <ProgressBar fill={0.3} colorClass="Fitness"/>
                     </div>
+                  <div className="section">
+                    <p>Nutrition</p>
+                    <ProgressBar fill={0.6} colorClass="Nutrition"/>
+                  </div>
                     <div className="section">
                         <p>Lifestyle</p>
-                        <ProgressBar fill={0.7}/>
-                    </div>
-                    <div className="section">
-                        <p>Nutrition</p>
-                        <ProgressBar fill={0.6}/>
+                        <ProgressBar fill={0.7} colorClass="Lifestyle"/>
                     </div>
                 </div>
             </div>
@@ -41,10 +41,11 @@ export class Impact extends React.Component {
 export class ProgressBar extends React.Component {
 
     render() {
+        let classes = "fill " + this.props.colorClass;
         let style = {width: (this.props.fill * 100) + "%"};
         return (
             <div className="impact-progress">
-                <div className="fill" style={style}/>
+                <div className={classes} style={style}/>
             </div>
         );
     }
