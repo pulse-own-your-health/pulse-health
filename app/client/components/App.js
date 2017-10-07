@@ -16,10 +16,11 @@ export class App extends React.Component {
                 <Helmet>
                     <meta name="viewport" content="width=device-width; initial-scale=1"/>
                 </Helmet>
-                <ApplicationBar title="Pulse Health"/>
+                <ApplicationHeader title="Pulse Health"/>
                 <div className="content">
                     {this.props.children}
                 </div>
+                <ApplicationFooter/>
             </div>
         );
     }
@@ -27,13 +28,28 @@ export class App extends React.Component {
 }
 
 
-export class ApplicationBar extends React.Component {
+export class ApplicationHeader extends React.Component {
 
     render() {
-        return <div className="bar">
-            <span>{this.props.title} </span>
-            <img src={logo} height="26px"></img>
-        </div>;
+        return (
+            <div className="header">
+                <span>{this.props.title} </span>
+                <img src={logo} height="26px"></img>
+            </div>
+        );
+    }
+
+}
+
+
+export class ApplicationFooter extends React.Component {
+
+    render() {
+        return (
+            <div className="footer">
+                <span>footer here.</span>
+            </div>
+        );
     }
 
 }

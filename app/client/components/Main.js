@@ -15,9 +15,6 @@ export class Main extends React.Component {
                 <div className="content">
                     <Circle score={60}/>
                 </div>
-                <div className="footer">
-                    <span>Footer here</span>
-                </div>
             </div>
         );
     }
