@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './Impact.css';
 
@@ -14,7 +13,8 @@ export class Impact extends React.Component {
                     <h1 style={{textAlign: "center", marginBottom: "0.5em"}}>Your Balance!</h1>
                 </div>
                 <div className="balance">
-                    <p>Beans at macchiato saucer con panna percolator macchiato caramelization cappuccino wings sweet cultivar. White dripper mug, wings, cup, et dark spoon cappuccino arabica.</p>
+                    <p>Beans at macchiato saucer con panna percolator macchiato caramelization cappuccino wings sweet
+                        cultivar. White dripper mug, wings, cup, et dark spoon cappuccino arabica.</p>
                     <div><i>Circle here.</i></div>
                 </div>
                 <div className="sections">
@@ -22,10 +22,10 @@ export class Impact extends React.Component {
                         <p>Fitness</p>
                         <ProgressBar fill={0.3} colorClass="Fitness"/>
                     </div>
-                  <div className="section">
-                    <p>Nutrition</p>
-                    <ProgressBar fill={0.6} colorClass="Nutrition"/>
-                  </div>
+                    <div className="section">
+                        <p>Nutrition</p>
+                        <ProgressBar fill={0.6} colorClass="Nutrition"/>
+                    </div>
                     <div className="section">
                         <p>Lifestyle</p>
                         <ProgressBar fill={0.7} colorClass="Lifestyle"/>

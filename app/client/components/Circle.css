@@ -1,9 +1,9 @@
 .flip {
-    -moz-transform: scaleX(-1);    /* Gecko */
-    -o-transform: scaleX(-1);      /* Opera */
+    -moz-transform: scaleX(-1); /* Gecko */
+    -o-transform: scaleX(-1); /* Opera */
     -webkit-transform: scaleX(-1); /* Webkit */
-    transform: scaleX(-1);         /* Standard */
-    filter: FlipH;                 /* IE 6/7/8 */
+    transform: scaleX(-1); /* Standard */
+    filter: FlipH; /* IE 6/7/8 */
 }
 
 .outer {
@@ -28,7 +28,7 @@
     display: grid;
     grid-gap: 0;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1frs;
+    grid-template-columns: 1fr 1 frs;
     grid-template-areas: "left right";
     width: 500px;
 }
