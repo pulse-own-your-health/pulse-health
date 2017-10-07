@@ -1,11 +1,11 @@
 import React from "react";
 
-import smoking from "../assets/smoking.png";
-import alcohol from "../assets/alcohol.png";
-import meat from "../assets/meat.png";
-import stress from "../assets/stress.png";
-import activity from "../assets/activity.png";
-import city from "../assets/city.png";
+import smoking from "../assets/smoking.jpg";
+import alcohol from "../assets/alcohol.jpg";
+import meat from "../assets/meat.jpg";
+import stress from "../assets/stress.jpg";
+import activity from "../assets/activity.jpg";
+import city from "../assets/city.jpg";
 import error from "../assets/error.png";
 
 import "./Question.css";
