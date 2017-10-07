@@ -43,16 +43,32 @@ export class ApplicationHeader extends React.Component {
 
 export class ApplicationFooter extends React.Component {
     render() {
-        return (
-            <div className="footer pulse-footer">
-                <FontAwesome name="dashcube"/>
-                <FontAwesome name="bar-chart"/>
-                <AddActionIcon width="20vw" height="20vw"/>
-                <FontAwesome name="trophy"/>
-                <FontAwesome name="user"/>
-            </div>
+      return (
+        <div className="footer pulse-footer">
+          <FontAwesome name="user"/>
+          <FontAwesome name="bar-chart"/>
+          <AddActionIcon width="20vw" height="20vw"/>
+          <FontAwesome name="trophy"/>
+          <FontAwesome name="cloud-upload" onClick="" />
+        </div>
         );
     }
+
+  userClick() {
+
+  }
+
+  statClick() {
+
+  }
+
+  trophyClick() {
+
+  }
+
+  cloudClick() {
+    
+  }
 }
 
 
