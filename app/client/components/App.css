@@ -77,7 +77,8 @@
 }
 
 .pulse-footer-icon {
-  max-height: 3em;
-  line-height: 3em !important;
+  font-size: 1.2em !important;
+  max-height: 2.5em;
+  line-height: 2.5em !important;
   color: gray;
 }
