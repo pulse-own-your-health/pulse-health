@@ -28,5 +28,16 @@
 
 .impact-progress > .fill {
     height: 3px;
-    background-color: #6AFF6A;
+}
+
+.impact-progress > .Fitness {
+    background-color: #69F0AE;
+}
+
+.impact-progress > .Nutrition {
+    background-color: #00E676;
+}
+
+.impact-progress > .Lifestyle {
+   background-color: #00C853;
 }
