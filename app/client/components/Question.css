@@ -1,0 +1,25 @@
+.questionImageContainer {
+  padding: 25px;
+}
+
+.questionImageContainer > img {
+  width: 100%;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.centerBox {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.questionText {
+  color: darkgray;
+}
+
+.periodText {
+  color: black;
+}
