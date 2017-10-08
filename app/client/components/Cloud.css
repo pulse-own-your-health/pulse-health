@@ -21,3 +21,11 @@
 .pulse-radio-inactive.active > .pulse-inactive-icon {
   background-color: #d66b80 !important;
 }
+
+.pulse-login-row {
+  padding-top: 10px;
+}
+
+.pulse-logged-in-text {
+  color: #02BBD1 !important;
+}
