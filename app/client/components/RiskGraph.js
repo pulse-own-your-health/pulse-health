@@ -4,6 +4,9 @@ import HighchartsMore from 'highcharts-more';
 
 HighchartsMore(ReactHighcharts.Highcharts)
 
+var dataset = [['Overweight', 50],['Cardio',25],['Sugar', 75]];
+var data = JSON.stringify(dataset);
+
 var config = {
     chart: {
         polar: true,
@@ -11,7 +14,7 @@ var config = {
     },
 
     title: {
-        text: 'Budget vs spending',
+        text: 'Overview of current week',
         x: -80
     },
 
@@ -20,8 +23,7 @@ var config = {
     },
 
     xAxis: {
-        categories: ['Sales', 'Marketing', 'Development', 'Customer Support',
-                'Information Technology', 'Administration'],
+        categories: ['Cardio Vascular Disease (CVD)', 'Cancer', 'Diabetes'],
         tickmarkPlacement: 'on',
         lineWidth: 0
     },
@@ -34,27 +36,19 @@ var config = {
 
     tooltip: {
         shared: true,
-        pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>'
+        pointFormat: '<span style="color:{series.color}">'
     },
-
-    legend: {
-        align: 'right',
-        verticalAlign: 'top',
-        y: 70,
-        layout: 'vertical'
-    },
-
+    
     series: [{
-        name: 'Allocated Budget',
-        data: [43000, 19000, 60000, 35000, 17000, 10000],
-        pointPlacement: 'on'
-    }, {
-        name: 'Actual Spending',
-        data: [50000, 39000, 42000, 31000, 26000, 14000],
-        pointPlacement: 'on'
-    }]
-
+        name: 'Last week',
+        data: [75, 25, 50],
+        pointPlacement: 'on',
+        color: '#8b8682'
+    }
+    ]
 }
+
+var snippet = 'Your tendency to ';
 
 export class RiskGraph extends React.Component {
     render() {
@@ -62,6 +56,13 @@ export class RiskGraph extends React.Component {
         return (
             <div id='test'>
                 <ReactHighcharts config={config} neverReflow={true} />
+                <br></br>
+                <h3>Resumee</h3>
+                <p>{snippet} CVD has decreased: It is still high!</p>
+                <p>{snippet} Cancer has increased</p>
+                <p>{snippet} Diabetes has increased</p>
+                <br></br>
+                <p></p>
             </div>
         );
     }
