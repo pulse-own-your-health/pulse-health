@@ -35,20 +35,36 @@
   border-radius: 0 !important;
 }
 
+.input[type="text"] {
+  border-radius: 0;
+}
+
 /* Pulse styles */
 
-.pulse-btn-primary {
-  background-color: #02BBD1;
-  border-color: #02BBD1;
-  color: white;
+.pulse-btn {
   font-size: 130% !important;
+  background-image: none !important;
+}
+
+.pulse-btn-primary {
+  background-color: #02BBD1 !important;
+  border-color: #02BBD1 !important;
+  color: white !important;
+  text-shadow: 0 0 1px #333 !important;
 }
 
 .pulse-btn-white {
-  background-color: white;
-  border-color: white;
-  color: #282828;
-  font-size: 130% !important;
+  text-shadow: 0 !important;
+  background-color: white !important;
+  border-color: white !important;
+  color: #282828 !important;
+}
+
+.pulse-btn-gray {
+  text-shadow: 0 !important;
+  background-color: lightgray !important;
+  border-color: lightgray !important;
+  color: #282828 !important;
 }
 
 .pulse-gradient-background {
