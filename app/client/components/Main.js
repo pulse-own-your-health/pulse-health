@@ -35,7 +35,7 @@ export class Main extends React.Component {
     render() {
         return (
             <div className="main">
-                <div className="header">
+                <div className="header" style={{marginBottom: "2em"}}>
                     <span><Link to="/impact">Your Impact</Link></span>
                     <span><Link to="/body">Your Body</Link></span>
                 </div>
@@ -58,7 +58,7 @@ export class ScoreDisplay extends React.Component {
 
     style = {
         position: "absolute",
-        top: "200px",
+        top: "240px",
         left: "113px",
         width: "50vw",
         height: "50vw"

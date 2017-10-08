@@ -61,7 +61,9 @@ export class ApplicationFooter extends React.Component {
                     <AddActionIcon/>
                 </Link>
             </BigBarIcon>
-            <FontAwesome className="pulse-footer-icon" name="trophy"/>
+            <Link to ="/body">
+              <FontAwesome className="pulse-footer-icon" name="user"/>
+            </Link>
             <Link to="/cloud">
                 <FontAwesome className="pulse-footer-icon" name="cloud-upload" />
             </Link>
