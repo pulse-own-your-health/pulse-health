@@ -15,7 +15,7 @@ var config = {
     },
 
     title: {
-        text: 'Overview of current week',
+        text: '',
         x: -80
     },
 
@@ -54,7 +54,7 @@ var snippet = 'Your risk for ';
 export class RiskGraph extends React.Component {
     render() {
         return (
-            <div id='test'>
+            <div style={{marginTop: '2.2em'}} id='test'>
                 <ReactHighcharts config={config} neverReflow={true} />
                 <Banner title="Cardio Vascular Disease">
                     {snippet} Cardio Vascular Disease is still high! Eating fruits and
