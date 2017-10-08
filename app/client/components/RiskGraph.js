@@ -3,7 +3,8 @@ import ReactHighcharts from 'react-highcharts';
 import HighchartsMore from 'highcharts-more';
 import {Banner} from './Main';
 
-HighchartsMore(ReactHighcharts.Highcharts)
+
+HighchartsMore(ReactHighcharts.Highcharts);
 
 var dataset = [['Overweight', 50],['Cardio',25],['Sugar', 75]];
 var data = JSON.stringify(dataset);
@@ -41,9 +42,10 @@ var config = {
     },
 
     series: [{
-        name: 'Your health',
+        name: '',
         data: [{y: 80, marker: { fillColor: '#D13251', radius: 6 }}, {y: 19.6, marker: { fillColor: '#6E6E6E'}}, {y: 44.6, marker: { fillColor: '#6E6E6E'} }],
         pointPlacement: 'on',
+        showInLegend: false,
         color: '#6E6E6E'
     }
     ]
@@ -54,7 +56,7 @@ var snippet = 'Your risk for ';
 export class RiskGraph extends React.Component {
     render() {
         return (
-            <div style={{marginTop: '2.2em'}} id='test'>
+            <div style={{marginTop: '2.2em', marginBottom: '50px'}} id='test'>
                 <ReactHighcharts config={config} neverReflow={true} />
                 <Banner title="Cardio Vascular Disease">
                     {snippet} Cardio Vascular Disease is still high! Eating fruits and
