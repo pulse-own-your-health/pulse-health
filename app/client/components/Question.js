@@ -137,9 +137,9 @@ export class Question extends React.Component {
 
   getButton() {
     if(this.state.page - 1 < this.maxPage - 1) {
-      return (<button type="button" onClick={this.nextQuestionClick} className="btn pulse-btn-white">Next question</button>);
+      return (<button type="button" onClick={this.nextQuestionClick} className="btn pulse-btn pulse-btn-white">Next question</button>);
     } else {
-      return (<input type="submit" value="Finish" onClick={this.finishQuestionsClick} className="btn pulse-btn-white" />);
+      return (<input type="submit" value="Finish" onClick={this.finishQuestionsClick} className="btn pulse-btn pulse-btn-white" />);
     }
   }
 
