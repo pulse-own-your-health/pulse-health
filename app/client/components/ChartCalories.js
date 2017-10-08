@@ -7,7 +7,7 @@ var config = {
     type: 'spline'
   },
   title: {
-    text: 'Body Weight'
+    text: 'Calories burned'
   },
   xAxis: {
     type: 'datetime',
@@ -21,7 +21,7 @@ var config = {
   },
   yAxis: {
     title: {
-      text: 'Weight in kg'
+      text: 'Calories'
     }
   },
   tooltip: {
@@ -42,26 +42,26 @@ var config = {
     showInLegend: false,
     color: '#02BBD1',
     data: [
-      [Date.UTC(2017, 8, 12), 92.3],
-      [Date.UTC(2017, 8, 15), 91.1],
-      [Date.UTC(2017, 8, 16), 89.7],
-      [Date.UTC(2017, 8, 18), 90.0],
-      [Date.UTC(2017, 8, 21), 90.2],
-      [Date.UTC(2017, 8, 23), 89.7],
-      [Date.UTC(2017, 8, 26), 89],
-      [Date.UTC(2017, 8, 28), 88.2],
-      [Date.UTC(2017, 8, 29), 87.5],
-      [Date.UTC(2017, 8, 30), 88.7],
-      [Date.UTC(2017, 9, 2), 87.6],
-      [Date.UTC(2017, 9, 4), 86],
-      [Date.UTC(2017, 9, 6), 85.4],
-      [Date.UTC(2017, 9, 7), 86.5],
-      [Date.UTC(2017, 9, 8), 88.6],
+      [Date.UTC(2017, 8, 12), 427],
+      [Date.UTC(2017, 8, 15), 107],
+      [Date.UTC(2017, 8, 16), 93],
+      [Date.UTC(2017, 8, 18), 482],
+      [Date.UTC(2017, 8, 21), 427],
+      [Date.UTC(2017, 8, 23), 315],
+      [Date.UTC(2017, 8, 26), 152],
+      [Date.UTC(2017, 8, 28), 330],
+      [Date.UTC(2017, 8, 29), 29],
+      [Date.UTC(2017, 8, 30), 164],
+      [Date.UTC(2017, 9, 2), 230],
+      [Date.UTC(2017, 9, 4), 180],
+      [Date.UTC(2017, 9, 6), 145],
+      [Date.UTC(2017, 9, 7), 72],
+      [Date.UTC(2017, 9, 8), 29],
     ]
   }]
 };
 
-export class ChartWeight extends React.Component {
+export class ChartCalories extends React.Component {
   render() {
     return (
       <ReactHighcharts config={config} neverReflow={true}/>

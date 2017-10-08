@@ -7,7 +7,7 @@ var config = {
     type: 'spline'
   },
   title: {
-    text: 'Your Steps taken'
+    text: 'Steps taken'
   },
   xAxis: {
     type: 'datetime',

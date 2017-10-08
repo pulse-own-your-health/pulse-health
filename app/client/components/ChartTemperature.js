@@ -7,7 +7,7 @@ var config = {
     type: 'spline'
   },
   title: {
-    text: 'Body Weight'
+    text: 'Your Body Weight'
   },
   xAxis: {
     type: 'datetime',
@@ -38,30 +38,30 @@ var config = {
   },
 
   series: [{
-    name: 'Body Weight',
+    name: 'Skin Temperature35',
     showInLegend: false,
     color: '#02BBD1',
     data: [
-      [Date.UTC(2017, 8, 12), 92.3],
-      [Date.UTC(2017, 8, 15), 91.1],
-      [Date.UTC(2017, 8, 16), 89.7],
-      [Date.UTC(2017, 8, 18), 90.0],
-      [Date.UTC(2017, 8, 21), 90.2],
-      [Date.UTC(2017, 8, 23), 89.7],
-      [Date.UTC(2017, 8, 26), 89],
-      [Date.UTC(2017, 8, 28), 88.2],
-      [Date.UTC(2017, 8, 29), 87.5],
-      [Date.UTC(2017, 8, 30), 88.7],
-      [Date.UTC(2017, 9, 2), 87.6],
-      [Date.UTC(2017, 9, 4), 86],
-      [Date.UTC(2017, 9, 6), 85.4],
-      [Date.UTC(2017, 9, 7), 86.5],
-      [Date.UTC(2017, 9, 8), 88.6],
+      [Date.UTC(2017, 8, 12), 35],
+      [Date.UTC(2017, 8, 15), 32],
+      [Date.UTC(2017, 8, 16), 30],
+      [Date.UTC(2017, 8, 18), 23.5],
+      [Date.UTC(2017, 8, 21), 12],
+      [Date.UTC(2017, 8, 23), 25],
+      [Date.UTC(2017, 8, 26), 31],
+      [Date.UTC(2017, 8, 28), 32],
+      [Date.UTC(2017, 8, 29), 37],
+      [Date.UTC(2017, 8, 30), 37.5],
+      [Date.UTC(2017, 9, 2), 37],
+      [Date.UTC(2017, 9, 4), 38],
+      [Date.UTC(2017, 9, 6), 37],
+      [Date.UTC(2017, 9, 7), 38],
+      [Date.UTC(2017, 9, 8), 39]
     ]
   }]
 };
 
-export class ChartWeight extends React.Component {
+export class ChartTemperature extends React.Component {
   render() {
     return (
       <ReactHighcharts config={config} neverReflow={true}/>
