@@ -38,7 +38,7 @@ var config = {
   },
 
   series: [{
-    name: 'Body Pressure Low',
+    name: 'Blood Pressure Low',
     showInLegend: true,
     color: '#02BBD1',
     data: [
@@ -60,7 +60,7 @@ var config = {
     ]
   },
     {
-      name: 'Body Pressure Low',
+      name: 'Blood Pressure High',
       showInLegend: true,
       color: '#02BBD1',
       data: [
