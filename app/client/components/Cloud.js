@@ -28,7 +28,7 @@ export class Cloud extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
+        <div className="row" style={{ padding: "15px 0 0 0 " }}>
           <div className="col-xs-1"></div>
           <div className="col-xs-10">
             <div className="row">
@@ -37,8 +37,8 @@ export class Cloud extends React.Component {
             <div className="row">
               <Media>
                 <Media.Left align="top">
-                  <img width={64} src={hpiCloud} />
-                  <ButtonToolbar style={{ padding: "10px 0 0 0" }}>
+                  <img width={112} src={hpiCloud} />
+                  <ButtonToolbar style={{ padding: "10px 0 0 0" }} className="centerBox">
                     <ToggleButtonGroup type="radio" name="options" defaultValue={0}>
                       <ToggleButton value={0} className="pulse-radio-inactive">
                         <FontAwesome className="pulse-inactive-icon" name="times"/>
@@ -79,7 +79,7 @@ export class Cloud extends React.Component {
                   <div className="pulse-login-row">
                     <ControlLabel>Password</ControlLabel>
                     <FormControl
-                      type="text"
+                      type="password"
                       placeholder="Enter text"
                     />
                     </div>

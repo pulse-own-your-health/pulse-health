@@ -50,7 +50,9 @@ export class ApplicationFooter extends React.Component {
     render() {
       return (
         <div className="footer pulse-footer">
-            <Link to="/"><FontAwesome className="pulse-footer-icon" name="home"/></Link>
+            <Link to="/">
+              <FontAwesome className="pulse-footer-icon" name="home"/>
+            </Link>
             <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
             <BigBarIcon>
                 <Link to="/questions">
@@ -58,18 +60,12 @@ export class ApplicationFooter extends React.Component {
                 </Link>
             </BigBarIcon>
             <FontAwesome className="pulse-footer-icon" name="trophy"/>
-            <FontAwesome className="pulse-footer-icon" name="cloud-upload" onClick={this.cloudClick}/>
+            <Link to="/cloud">
+              <FontAwesome className="pulse-footer-icon" name="cloud-upload" />
+            </Link>
         </div>
         );
     }
-
-  addClick() {
-    window.location = "/questions";
-  }
-
-  cloudClick() {
-    window.location = "/cloud";
-  }
 }
 
 
