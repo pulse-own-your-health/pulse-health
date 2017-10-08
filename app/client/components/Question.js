@@ -51,37 +51,37 @@ export class Question extends React.Component {
     switch(this.state.page){
     case 1:
       data.image = smoking;
-      data.text = "How often did you smoke today?";
+      data.text = "How often did you smoke?";
       data.period = times;
       break;
     case 2:
       data.image = alcohol;
-      data.text = "How many drinks did you have today?";
+      data.text = "How many drinks did you have?";
       data.period = times;
       break;
     case 3:
       data.image = meat;
-      data.text = "How often did you eat red meat today?";
+      data.text = "How often did you eat red meat?";
       data.period = times;
       break;
     case 4:
       data.image = stress;
-      data.text = "How often did you feel stressed today?";
+      data.text = "How often did you feel stressed?";
       data.period = times;
       break;
     case 5:
       data.image = activity;
-      data.text = "How often did you do sports today?";
+      data.text = "How often did you do sports?";
       data.period = times;
       break;
     case 6:
       data.image = city;
-      data.text = "How much time did you spend in the city?";
+      data.text = "Did you spend time in a city?";
       data.period = hours;
       break;
     case 7:
       data.image = sugar;
-      data.text = "How often did you eat sugar today?";
+      data.text = "How much sugar did you eat?";
       data.period = gram;
       break;
     default:
