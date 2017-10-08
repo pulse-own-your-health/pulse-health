@@ -53,7 +53,9 @@ export class ApplicationFooter extends React.Component {
             <Link to="/">
               <FontAwesome className="pulse-footer-icon" name="home"/>
             </Link>
-            <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
+            <Link to ="/riskgraph">
+                <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
+            </Link>
             <BigBarIcon>
                 <Link to="/questions">
                     <AddActionIcon/>
@@ -61,7 +63,7 @@ export class ApplicationFooter extends React.Component {
             </BigBarIcon>
             <FontAwesome className="pulse-footer-icon" name="trophy"/>
             <Link to="/cloud">
-              <FontAwesome className="pulse-footer-icon" name="cloud-upload" />
+                <FontAwesome className="pulse-footer-icon" name="cloud-upload" />
             </Link>
         </div>
         );
