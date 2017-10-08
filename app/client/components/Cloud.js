@@ -7,6 +7,7 @@ import './Cloud.css';
 import hpiCloud from "../assets/gesundheitscloud.png";
 
 import {Media, ButtonToolbar, ToggleButton, ToggleButtonGroup} from "react-bootstrap";
+import FontAwesome from 'react-fontawesome';
 
 export class Cloud extends React.Component {
   render() {
@@ -21,10 +22,14 @@ export class Cloud extends React.Component {
             <Media>
               <Media.Left align="top">
                 <img width={64} src={hpiCloud} />
-                <ButtonToolbar>
+                <ButtonToolbar style={{ padding: "10px 0 0 0" }}>
                   <ToggleButtonGroup type="radio" name="options" defaultValue={1}>
-                    <ToggleButton value={0}>inaktiv</ToggleButton>
-                    <ToggleButton value={1} className="pulse-radio-active">aktiv</ToggleButton>
+                    <ToggleButton value={0} className="pulse-radio-inactive">
+                      <FontAwesome className="pulse-inactive-icon" name="times"/>
+                    </ToggleButton>
+                    <ToggleButton value={1} className="pulse-radio-active">
+                      <FontAwesome className="pulse-active-icon" name="check"/>
+                    </ToggleButton>
                   </ToggleButtonGroup>
                 </ButtonToolbar>
               </Media.Left>
