@@ -41,41 +41,43 @@ export class Question extends React.Component {
   getPeriod() { return this.getData().period; }
 
   getData() {
+    var times = "times";
     var timesADay = "times a day";
     var timesAWeek = "times a week";
+    var hours = "hours";
 
     var data = {};
 
     switch(this.state.page){
     case 1:
       data.image = smoking;
-      data.text = "Do you smoke?";
-      data.period = timesADay;
+      data.text = "How often did you smoke today?";
+      data.period = times;
       break;
     case 2:
       data.image = alcohol;
-      data.text = "Do you drink?";
-      data.period = timesAWeek;
+      data.text = "How many drinks did you have today?";
+      data.period = times;
       break;
     case 3:
       data.image = meat;
-      data.text = "Do you eat red meat?";
-      data.period = timesAWeek;
+      data.text = "How often did you eat red meat today?";
+      data.period = times;
       break;
     case 4:
       data.image = stress;
-      data.text = "How often do you feel stressed?";
-      data.period = timesADay;
+      data.text = "How often did you feel stressed today?";
+      data.period = times;
       break;
     case 5:
       data.image = activity;
-      data.text = "How often do you do sports?";
-      data.period = timesAWeek;
+      data.text = "How often did you do sports today?";
+      data.period = times;
       break;
     case 6:
       data.image = city;
-      data.text = "How much time do you spend in the city?";
-      data.period = timesAWeek;
+      data.text = "How much time did you spend in the city?";
+      data.period = hours;
       break;
     default:
       data.image = error;
@@ -108,7 +110,7 @@ export class Question extends React.Component {
         <div className="col-xs-10">
           <div className="row">
             <div className="questionImageContainer">
-              <img src={this.getImage()} />
+              <img src={this.getImage()} className="round" />
             </div>
           </div>
           <div className="row">

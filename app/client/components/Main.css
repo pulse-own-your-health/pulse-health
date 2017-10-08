@@ -17,7 +17,3 @@
     background-color: #E7E7E7;
     text-align: center;
 }
-
-.main > .header span:nth-child(1) {
-    border-right: 1px solid #CCCCCC;
-}
