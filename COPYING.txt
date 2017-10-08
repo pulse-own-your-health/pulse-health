@@ -1,0 +1,4 @@
+Copyright (c) 2017 Carolin Kurpiers, Vanessa von Frankenberg, Klaus Ondrag,
+    Thien Nguyen, Valentin Zieglmeier, Niklas Rosenstein
+
+All rights reserved.
