@@ -28,7 +28,7 @@ export class Cloud extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
+        <div className="row" style={{ padding: "15px 0 0 0 " }}>
           <div className="col-xs-1"></div>
           <div className="col-xs-10">
             <div className="row">
