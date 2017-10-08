@@ -6,8 +6,8 @@ import {Link, IndexLink} from 'react-router';
 import {Helmet} from 'react-helmet';
 import './App.css';
 import './favicon.ico';
-import logo from '../../../.assets/pulse-logo.png';
-
+import logo_old from '../../../.assets/pulse-logo.png';
+import logo from '../assets/pulse-kreis-02.png';
 
 export class App extends React.Component {
     render() {
