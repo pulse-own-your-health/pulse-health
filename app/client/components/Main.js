@@ -11,7 +11,7 @@ export class Main extends React.Component {
             <div className="main">
                 <div className="header">
                     <span><Link to="/impact">Your Impact</Link></span>
-                    <span><Link to="/facts">Body Facts</Link></span>
+                    <span><Link to="/body">Body Facts</Link></span>
                 </div>
                 <div className="content">
                     <Circle score={60}/>
