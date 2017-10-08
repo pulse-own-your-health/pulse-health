@@ -54,16 +54,8 @@ export class ApplicationFooter extends React.Component {
         );
     }
 
-  userClick() {
-
-  }
-
-  statClick() {
-
-  }
-
-  trophyClick() {
-
+  addClick() {
+    window.location = "/questions";
   }
 
   cloudClick() {
@@ -80,7 +72,7 @@ export class AddActionIcon extends React.Component {
         };
         return (
             <div className="add" style={style}>
-                <svg width={this.props.width} height={this.props.height} viewBox="0 0 100 100">
+                <svg width={this.props.width} height={this.props.height} viewBox="0 0 100 100" onClick={this.addClick}>
                     <circle cx="50" cy="50" r="45" fill="#F2F2F2" stroke="#CECECE"/>
                     <text x="50" y="42" textAnchor="middle" alignmentBaseline="central" fontSize="18vw" fill="#777">
                         +
