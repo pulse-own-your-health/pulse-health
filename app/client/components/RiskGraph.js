@@ -1,10 +1,12 @@
 import React from 'react';
+import ReactHighcharts from 'react-highcharts';
+import HighchartsMore from 'highcharts-more';
 
-var ReactHighcharts = require('react-highcharts');
+HighchartsMore(ReactHighcharts.Highcharts)
 
 var config = {
     chart: {
-        polar: false,
+        polar: true,
         type: 'line'
     },
 
@@ -19,7 +21,7 @@ var config = {
 
     xAxis: {
         categories: ['Sales', 'Marketing', 'Development', 'Customer Support',
-            'Information Technology', 'Administration'],
+                'Information Technology', 'Administration'],
         tickmarkPlacement: 'on',
         lineWidth: 0
     },
@@ -51,13 +53,15 @@ var config = {
         data: [50000, 39000, 42000, 31000, 26000, 14000],
         pointPlacement: 'on'
     }]
-};
+
+}
 
 export class RiskGraph extends React.Component {
     render() {
+
         return (
-            <div>
-                <ReactHighcharts config={config} neverReflow={true}/>
+            <div id='test'>
+                <ReactHighcharts config={config} neverReflow={true} />
             </div>
         );
     }
