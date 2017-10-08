@@ -6,8 +6,7 @@ import {Link, IndexLink} from 'react-router';
 import {Helmet} from 'react-helmet';
 import './App.css';
 import './favicon.ico';
-import logo_old from '../../../.assets/pulse-logo.png';
-import logo from '../assets/pulse-kreis-02.png';
+import logo from '../assets/pulse-kreis-03.png';
 
 export class App extends React.Component {
     render() {
@@ -33,8 +32,14 @@ export class ApplicationHeader extends React.Component {
     render() {
         return (
             <div className="header">
-                <span>{this.props.title} </span>
-                <img src={logo} height="26px"/>
+                <span></span>
+                <BigBarIcon className="add" location="bottom">
+                    <div style={{width: "20vw", height: "20vw"}}>
+                        <img src={logo} width="90%" height="90%"
+                             style={{marginTop: "7%"}}/>
+                    </div>
+                </BigBarIcon>
+                <span></span>
             </div>
         );
     }
@@ -45,47 +50,54 @@ export class ApplicationFooter extends React.Component {
     render() {
       return (
         <div className="footer pulse-footer">
-          <FontAwesome className="pulse-footer-icon" name="user"/>
-          <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
-          <AddActionIcon width="20vw" height="20vw"/>
-          <FontAwesome className="pulse-footer-icon" name="trophy"/>
-          <FontAwesome className="pulse-footer-icon" name="cloud-upload" onClick={this.cloudClick}/>
+            <Link to="/">
+              <FontAwesome className="pulse-footer-icon" name="home"/>
+            </Link>
+            <Link to ="/riskgraph">
+                <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
+            </Link>
+            <BigBarIcon>
+                <Link to="/questions">
+                    <AddActionIcon/>
+                </Link>
+            </BigBarIcon>
+            <FontAwesome className="pulse-footer-icon" name="trophy"/>
+            <Link to="/cloud">
+                <FontAwesome className="pulse-footer-icon" name="cloud-upload" />
+            </Link>
         </div>
         );
     }
-
-  userClick() {
-
-  }
-
-  statClick() {
-
-  }
-
-  trophyClick() {
-
-  }
-
-  cloudClick() {
-    window.location = "/cloud";
-  }
 }
 
 
 export class AddActionIcon extends React.Component {
     render() {
+        return (
+            <svg width="20vw" height="20vw" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="#F2F2F2" stroke="#CECECE"/>
+                <text x="50" y="42" textAnchor="middle" alignmentBaseline="central" fontSize="18vw" fill="#777">
+                    +
+                </text>
+            </svg>
+        );
+    }
+}
+
+
+export class BigBarIcon extends React.Component {
+    render() {
         let style = {
             position: "relative",
             marginTop: "-10vw"
         };
+        if (this.props.location == 'bottom') {
+            delete style.marginTop;
+            style.marginBottom = "10vw";
+        }
         return (
-            <div className="add" style={style}>
-                <svg width={this.props.width} height={this.props.height} viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="45" fill="#F2F2F2" stroke="#CECECE"/>
-                    <text x="50" y="42" textAnchor="middle" alignmentBaseline="central" fontSize="18vw" fill="#777">
-                        +
-                    </text>
-                </svg>
+            <div className={this.props.className} style={style}>
+                {this.props.children}
             </div>
         );
     }

@@ -23,9 +23,9 @@ var config = {
     },
 
     xAxis: {
-        categories: ['Cardio Vascular Disease (CVD)', 'Cancer', 'Diabetes'],
+        categories: ['Cardio Vascular Disease', 'Cancer', 'Diabetes'],
         tickmarkPlacement: 'on',
-        lineWidth: 0
+        lineWidth: 0,
     },
 
     yAxis: {
@@ -40,10 +40,10 @@ var config = {
     },
     
     series: [{
-        name: 'Last week',
-        data: [75, 25, 50],
+        name: 'Your health',
+        data: [{y: 80, marker: { fillColor: '#D13251', radius: 6 }}, {y: 19.6, marker: { fillColor: '#6E6E6E'}}, {y: 44.6, marker: { fillColor: '#6E6E6E'} }],
         pointPlacement: 'on',
-        color: '#8b8682'
+        color: '#6E6E6E'
     }
     ]
 }
@@ -52,15 +52,14 @@ var snippet = 'Your tendency to ';
 
 export class RiskGraph extends React.Component {
     render() {
-
         return (
             <div id='test'>
                 <ReactHighcharts config={config} neverReflow={true} />
                 <br></br>
                 <h3>Resumee</h3>
-                <p>{snippet} CVD has decreased: It is still high!</p>
-                <p>{snippet} Cancer has increased</p>
-                <p>{snippet} Diabetes has increased</p>
+                <p>{snippet} Cardio Vascular Disease is still high! Eating fruits and vegetable while being active prevents from increasing it.</p>
+                <p>{snippet} Cancer is low.</p>
+                <p>{snippet} Diabetes is medium. Consume less red meat and avoid too much sugar, it will get better then.</p>
                 <br></br>
                 <p></p>
             </div>

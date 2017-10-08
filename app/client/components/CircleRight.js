@@ -49,7 +49,7 @@ var config = {
 export class CircleRight extends React.Component {
     render() {
         return (
-            <div className='outer'>
+            <div className='outer' style={this.props.style}>
                 <div className='inner flip right'>
                     <ReactHighcharts config={config} neverReflow={true}/>
                 </div>

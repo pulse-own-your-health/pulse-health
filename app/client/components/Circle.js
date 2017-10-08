@@ -7,9 +7,9 @@ import {CircleRight} from "./CircleRight";
 export class Circle extends React.Component {
     render() {
         return (
-            <div className='grid-wrapper'>
-                <CircleLeft/>
-                <CircleRight/>
+            <div className='grid-wrapper' style={this.props.style}>
+                <CircleLeft style={this.props.leftStyle}/>
+                <CircleRight style={this.props.rightStyle}/>
             </div>
         );
     }
