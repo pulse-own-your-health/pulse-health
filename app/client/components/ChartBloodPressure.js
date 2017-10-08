@@ -39,7 +39,7 @@ var config = {
 
   series: [{
     name: 'Body Pressure Low',
-    showInLegend: false,
+    showInLegend: true,
     color: '#02BBD1',
     data: [
       [Date.UTC(2017, 8, 12), 81],
@@ -61,7 +61,7 @@ var config = {
   },
     {
       name: 'Body Pressure Low',
-      showInLegend: false,
+      showInLegend: true,
       color: '#02BBD1',
       data: [
         [Date.UTC(2017, 8, 12), 120],
