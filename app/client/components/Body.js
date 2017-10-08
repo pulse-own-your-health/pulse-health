@@ -4,6 +4,7 @@ import './Body.css';
 import {CircleRight} from "./CircleRight";
 import {ChartWeight} from "./ChartWeight";
 import {ChartSteps} from "./ChartSteps";
+import {ChartCalories} from "./ChartCalories";
 
 
 export class Body extends React.Component {
@@ -21,6 +22,7 @@ export class Body extends React.Component {
                 </div>
                 <ChartWeight />
                 <hr/>
+                <ChartCalories />
                 <div className="last2">
                   <ChartSteps />
                 </div>
