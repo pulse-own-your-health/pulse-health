@@ -79,7 +79,7 @@ export class Cloud extends React.Component {
                   <div className="pulse-login-row">
                     <ControlLabel>Password</ControlLabel>
                     <FormControl
-                      type="text"
+                      type="password"
                       placeholder="Enter text"
                     />
                     </div>
