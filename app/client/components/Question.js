@@ -7,6 +7,7 @@ import stress from "../assets/stress.jpg";
 import activity from "../assets/activity.jpg";
 import city from "../assets/city.jpg";
 import error from "../assets/error.png";
+import sugar from "../assets/sugar.jpg";
 
 import "./Question.css";
 import "react-bootstrap/dist/react-bootstrap.js";
@@ -23,7 +24,7 @@ export class Question extends React.Component {
       amount : "0",
       reply : {}
     };
-    this.maxPage = 6;
+    this.maxPage = 7;
 
     this.handleChange = this.handleChange.bind(this);
     this.nextQuestionClick = this.nextQuestionClick.bind(this);
@@ -42,9 +43,8 @@ export class Question extends React.Component {
 
   getData() {
     var times = "times";
-    var timesADay = "times a day";
-    var timesAWeek = "times a week";
     var hours = "hours";
+    var gram = "gram";
 
     var data = {};
 
@@ -78,6 +78,11 @@ export class Question extends React.Component {
       data.image = city;
       data.text = "How much time did you spend in the city?";
       data.period = hours;
+      break;
+    case 7:
+      data.image = sugar;
+      data.text = "How often did you eat sugar today?";
+      data.period = gram;
       break;
     default:
       data.image = error;
