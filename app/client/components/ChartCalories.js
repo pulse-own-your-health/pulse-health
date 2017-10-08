@@ -38,7 +38,7 @@ var config = {
   },
 
   series: [{
-    name: 'Body Weight',
+    name: 'Calories',
     showInLegend: false,
     color: '#02BBD1',
     data: [

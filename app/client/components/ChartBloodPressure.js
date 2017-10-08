@@ -7,7 +7,7 @@ var config = {
     type: 'spline'
   },
   title: {
-    text: 'Your Body Weight'
+    text: 'Blood Pressure'
   },
   xAxis: {
     type: 'datetime',
@@ -21,7 +21,7 @@ var config = {
   },
   yAxis: {
     title: {
-      text: 'Weight in kg'
+      text: 'Pressure'
     }
   },
   tooltip: {
