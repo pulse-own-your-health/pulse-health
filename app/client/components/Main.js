@@ -43,12 +43,10 @@ export class Main extends React.Component {
                     <Circle style={{width: "100vw", height: "100vw", overflow: "hidden", marginTop: "1em"}}
                             leftStyle={{marginLeft: "-30px"}}/>
                     <ScoreDisplay score={60}/>
-                    <ChallengeBanner>
-                        <p>
-                            <FontAwesome name="trophy"/>
-                            You've completed your zero-sugar challenge!
-                        </p>
-                    </ChallengeBanner>
+                    <Banner>
+                        <FontAwesome name="trophy"/>
+                        You've completed your zero-sugar challenge!
+                    </Banner>
                 </div>
             </div>
         );
@@ -90,12 +88,15 @@ export class ScoreDisplay extends React.Component {
 }
 
 
-export class ChallengeBanner extends React.Component {
+export class Banner extends React.Component {
 
     render() {
         return (
-            <div className="challenge-banner">
-                {this.props.children}
+            <div className="banner">
+                {this.props.title &&
+                    <p><b>{this.props.title}</b></p>
+                }
+                <p>{this.props.children}</p>
             </div>
         );
     }

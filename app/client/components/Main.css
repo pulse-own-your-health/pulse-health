@@ -22,16 +22,15 @@
     color: white;
 }
 
-.challenge-banner  {
+.banner  {
     margin: 1em;
-    padding: 0em 1em;
-    line-height: 3em;
+    padding: 1em;
     color: white;
     background-color: #444444;
     border-radius: 8px;
 }
 
-.challenge-banner .fa {
+.banner .fa {
     margin-right: 1em;
     color: #69f0ae;
 }
