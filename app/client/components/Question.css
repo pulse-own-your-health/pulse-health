@@ -121,3 +121,11 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #5F7D8A;
 }
+
+.round {
+  border-radius: 50%;
+}
+
+.btn {
+  border-radius: 10px !important;
+}
