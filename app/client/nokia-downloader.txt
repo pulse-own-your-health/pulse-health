@@ -1,0 +1,21 @@
+https://api.health.nokia.com/user?action=getinfo&access_token=50ebaded793d950652551e5c1977f1532c44a0c9
+{"status":0,"body":{"user":{"id":14422230,"created":1507397951,"firstmeasure":{"weight":"2017-10-07","activity":"2017-09-23"}}}}
+
+
+https://api.health.nokia.com/v2/user?action=getdevice&access_token=50ebaded793d950652551e5c1977f1532c44a0c9
+{"status":0,"body":{"devices":[{"type":"Blood Pressure Monitor","model":"Withings Blood Pressure Monitor V3","battery":"high"},{"type":"Scale","model":"Body Cardio","battery":"medium"},{"type":"Smart Connected Thermometer","model":"Thermo","battery":"high"}]}}
+
+
+https://api.health.nokia.com/measure?action=getmeas&access_token=50ebaded793d950652551e5c1977f1532c44a0c9
+{"status":0,"body":{"updatetime":1507458724,"measuregrps":[{"grpid":922430548,"attrib":0,"date":1507414125,"category":1,"measures":[{"value":102000,"type":9,"unit":-3},{"value":142000,"type":10,"unit":-3},{"value":79000,"type":11,"unit":-3}]},{"grpid":922429970,"attrib":0,"date":1507414015,"category":1,"measures":[{"value":67000,"type":9,"unit":-3},{"value":105000,"type":10,"unit":-3},{"value":67000,"type":11,"unit":-3}]},{"grpid":922429187,"attrib":0,"date":1507413864,"category":1,"measures":[{"value":89000,"type":9,"unit":-3},{"value":121000,"type":10,"unit":-3},{"value":73000,"type":11,"unit":-3}]},{"grpid":922426780,"attrib":0,"date":1507413279,"category":1,"measures":[{"value":24144,"type":12,"unit":-3},{"value":36535,"type":71,"unit":-3},{"value":34425,"type":73,"unit":-3}]},{"grpid":922426583,"attrib":0,"date":1507413240,"category":1,"measures":[{"value":24042,"type":12,"unit":-3},{"value":36439,"type":71,"unit":-3},{"value":34235,"type":73,"unit":-3}]},{"grpid":922426186,"attrib":0,"date":1507413110,"category":1,"measures":[{"value":23817,"type":12,"unit":-3},{"value":36787,"type":71,"unit":-3},{"value":34892,"type":73,"unit":-3}]},{"grpid":922426184,"attrib":0,"date":1507413087,"category":1,"measures":[{"value":23853,"type":12,"unit":-3},{"value":36283,"type":71,"unit":-3},{"value":33911,"type":73,"unit":-3}]},{"grpid":922422697,"attrib":2,"date":1507412437,"category":1,"measures":[{"value":80000,"type":9,"unit":-3},{"value":120000,"type":10,"unit":-3},{"value":60000,"type":11,"unit":-3}]},{"grpid":922376313,"attrib":0,"date":1507401754,"category":1,"measures":[{"value":83903,"type":1,"unit":-3}]},{"grpid":922374409,"attrib":0,"date":1507401315,"category":1,"measures":[{"value":83852,"type":1,"unit":-3}]},{"grpid":922357032,"attrib":2,"date":1507397950,"category":1,"measures":[{"value":1830,"type":4,"unit":-3}]},{"grpid":922357031,"attrib":2,"date":1507397950,"category":1,"measures":[{"value":10000,"type":1,"unit":-2}]}],"timezone":"Europe\/Berlin"}}
+
+
+https://api.health.nokia.com/v2/measure?action=getactivity&date=2017-10-07&access_token=50ebaded793d950652551e5c1977f1532c44a0c9
+{"status":0,"body":{"date":"2017-10-07","steps":2958,"distance":2257.299,"calories":94.936,"totalcalories":2085.843,"elevation":0,"soft":5580,"moderate":900,"intense":0,"timezone":"Europe\/Berlin","more":false,"offset":0}}
+
+
+https://api.health.nokia.com/v2/measure?action=getactivity&startdateymd=2017-10-07&enddateymd=2017-10-06&access_token=50ebaded793d950652551e5c1977f1532c44a0c9
+{"status":0,"body":{"activities":[],"more":false,"offset":0}}
+
+
+
