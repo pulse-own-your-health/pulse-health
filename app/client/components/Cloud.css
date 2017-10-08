@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.pulse-radio {
+.pulse-radio-active, .pulse-radio-inactive {
   padding: 3px 8px !important;
 }
 
