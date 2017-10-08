@@ -108,25 +108,25 @@ export class Question extends React.Component {
       <div className="container pulse-gradient-background">
         <div className="col-xs-1"></div>
         <div className="col-xs-10">
-          <div className="row">
+          <div className="row row-q">
             <div className="questionImageContainer">
               <img src={this.getImage()} className="round" />
             </div>
           </div>
-          <div className="row">
+          <div className="row row-q">
             <h4 className="centerText questionText">
               {this.getQuestion()}
             </h4>
           </div>
-          <div className="row">
+          <div className="row row-q">
             <h4 className="centerText periodText">
               <span id="amount">{this.state.amount}</span> {this.getPeriod()}
             </h4>
           </div>
-          <div className="row">
+          <div className="row row-q">
             <input type="range" min="0" max="14" value={this.state.amount} step="1" onChange={this.handleChange} />
           </div>
-          <div className="row">
+          <div className="row row-q">
             <div className="centerBox" style={{ padding: "15px 0 0 0" }}>
               { this.getButton() }
             </div>
@@ -139,9 +139,9 @@ export class Question extends React.Component {
 
   getButton() {
     if(this.state.page - 1 < this.maxPage - 1) {
-      return (<button type="button" onClick={this.nextQuestionClick} className="btn pulse-btn pulse-btn-white">Next question</button>);
+      return (<button type="button" onClick={this.nextQuestionClick} className="btn pulse-btn pulse-btn-primary">Next question</button>);
     } else {
-      return (<input type="submit" value="Finish" onClick={this.finishQuestionsClick} className="btn pulse-btn pulse-btn-white" />);
+      return (<input type="submit" value="Finish" onClick={this.finishQuestionsClick} className="btn pulse-btn pulse-btn-primary" />);
     }
   }
 
