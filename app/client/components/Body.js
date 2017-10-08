@@ -17,8 +17,11 @@ export class Body extends React.Component {
                 </div>
                 <div className="balance">
                     <CircleRight/>
-                    <p>Beans at macchiato saucer con panna percolator macchiato caramelization cappuccino wings sweet
-                        cultivar. White dripper mug, wings, cup, et dark spoon cappuccino arabica.</p>
+                    <p style={{marginTop: "5em"}}>
+                        You are doing a good job with reducing your body weight.
+                        In the recent days you have burned fewer calories than
+                        usually, however. You should start workout again!
+                    </p>
                 </div>
                 <ChartWeight />
                 <hr/>

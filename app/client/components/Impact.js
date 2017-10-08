@@ -13,8 +13,10 @@ export class Impact extends React.Component {
                     <h1 style={{textAlign: "center", marginBottom: "0.5em"}}>Your Balance!</h1>
                 </div>
                 <div className="balance">
-                    <p>Beans at macchiato saucer con panna percolator macchiato caramelization cappuccino wings sweet
-                        cultivar. White dripper mug, wings, cup, et dark spoon cappuccino arabica.</p>
+                    <p style={{marginTop: "5em"}}>
+                        You are living a balanced lifestyle and and eat healthy
+                        food for the most part. You still need to improve on
+                        the frequency of your workout, though. Keep it up!</p>
                     <CircleLeft/>
                 </div>
                 <div className="sections">
