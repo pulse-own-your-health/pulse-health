@@ -26,7 +26,7 @@ export class Impact extends React.Component {
                         <p>Nutrition</p>
                         <ProgressBar fill={0.6} colorClass="Nutrition"/>
                     </div>
-                    <div className="section">
+                    <div className="section last">
                         <p>Lifestyle</p>
                         <ProgressBar fill={0.7} colorClass="Lifestyle"/>
                     </div>

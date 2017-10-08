@@ -44,3 +44,7 @@
 .impact-progress > .Lifestyle {
     background-color: #00C853;
 }
+
+.impact-progress > .last {
+    margin-bottom: 50px;
+}
