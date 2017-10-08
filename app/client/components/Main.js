@@ -1,6 +1,7 @@
 
 import React from 'react';
 import {Link} from 'react-router';
+import {Circle} from './Circle';
 import './Main.css';
 
 
@@ -14,34 +15,10 @@ export class Main extends React.Component {
                     <span><Link to="/body">Body Facts</Link></span>
                 </div>
                 <div className="content">
-                    <Circle score={60}/>
+                    <Circle style={{width: "100vw", height: "100vw", overflow: "hidden", marginTop: "1em"}}
+                            leftStyle={{marginLeft: "-30px"}}/>
                 </div>
             </div>
-        );
-    }
-
-}
-
-
-export class Circle extends React.Component {
-
-    render() {
-        let {width, height} = this.props;
-        if (width === undefined) width = "100%";
-        if (height === undefined) height = "100vw";
-        return (
-            <svg className="circle" width={width} height={height}>
-                <text x="50%" y="30%" textAnchor="middle"
-                        alignmentBaseline="central" fontSize="4vw">
-                    your score
-                </text>
-                <text x="50%" y="60%" textAnchor="middle"
-                        alignmentBaseline="central" fontSize="25vw">
-                    {this.props.score}
-                </text>
-                <circle cx="50%" cy="50%" r="40%" fill="transparent"
-                        stroke="black" strokeWidth="3"/>
-            </svg>
         );
     }
 

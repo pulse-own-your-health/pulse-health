@@ -65,7 +65,7 @@ var config = {
 export class CircleLeft extends React.Component {
     render() {
         return (
-            <div className='outer'>
+            <div className='outer' style={this.props.style}>
                 <div className='inner'>
                     <ReactHighcharts config={config} neverReflow={true} />
                 </div>

@@ -50,7 +50,7 @@ export class ApplicationFooter extends React.Component {
     render() {
       return (
         <div className="footer pulse-footer">
-            <FontAwesome className="pulse-footer-icon" name="user"/>
+            <Link to="/"><FontAwesome className="pulse-footer-icon" name="home"/></Link>
             <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
             <BigBarIcon>
                 <Link to="/questions">
