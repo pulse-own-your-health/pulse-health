@@ -53,12 +53,10 @@ var config = {
         data: [50000, 39000, 42000, 31000, 26000, 14000],
         pointPlacement: 'on'
     }]
-
-}
+};
 
 export class RiskGraph extends React.Component {
     render() {
-
         return (
             <div id='test'>
                 <ReactHighcharts config={config} neverReflow={true} />

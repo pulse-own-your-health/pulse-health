@@ -2,6 +2,7 @@ import React from 'react';
 import './Body.css';
 
 import {CircleRight} from "./CircleRight";
+import {WeightChart} from "./WeightChart";
 
 
 export class Body extends React.Component {
@@ -17,6 +18,7 @@ export class Body extends React.Component {
                     <p>Beans at macchiato saucer con panna percolator macchiato caramelization cappuccino wings sweet
                         cultivar. White dripper mug, wings, cup, et dark spoon cappuccino arabica.</p>
                 </div>
+                <WeightChart />
                 <div className="sections">
                     <div className="section">
                         <p>Fitness</p>
@@ -39,7 +41,6 @@ export class Body extends React.Component {
 
 
 export class ProgressBar extends React.Component {
-
     render() {
         let classes = "fill " + this.props.colorClass;
         let style = {width: (this.props.fill * 100) + "%"};
