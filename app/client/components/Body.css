@@ -21,30 +21,6 @@
     border-radius: 5px;
 }
 
-.impact-progress {
-    height: 15px;
-    width: 100%;
-    background-color: #B3B3B3;
-    border-radius: 10px;
-}
-
-.impact-progress > .fill {
-    height: 15px;
-    border-radius: 10px;
-}
-
-.impact-progress > .Fitness {
-    background-color: #69F0AE;
-}
-
-.impact-progress > .Nutrition {
-    background-color: #00E676;
-}
-
-.impact-progress > .Lifestyle {
-    background-color: #00C853;
-}
-
-.impact-progress > .last {
-    margin-bottom: 50px;
+.last2 {
+  margin-bottom: 25px !important;
 }

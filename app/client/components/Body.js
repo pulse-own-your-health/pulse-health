@@ -20,8 +20,10 @@ export class Body extends React.Component {
                         cultivar. White dripper mug, wings, cup, et dark spoon cappuccino arabica.</p>
                 </div>
                 <ChartWeight />
-              <hr/>
-                <ChartSteps />
+                <hr/>
+                <div className="last2">
+                  <ChartSteps />
+                </div>
             </div>
         );
     }
