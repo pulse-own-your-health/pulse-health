@@ -49,7 +49,7 @@ export class ApplicationFooter extends React.Component {
           <FontAwesome className="pulse-footer-icon" name="bar-chart"/>
           <AddActionIcon width="20vw" height="20vw"/>
           <FontAwesome className="pulse-footer-icon" name="trophy"/>
-          <FontAwesome className="pulse-footer-icon" name="cloud-upload" />
+          <FontAwesome className="pulse-footer-icon" name="cloud-upload" onClick={this.cloudClick}/>
         </div>
         );
     }
@@ -67,8 +67,7 @@ export class ApplicationFooter extends React.Component {
   }
 
   cloudClick() {
-    console.log("CLICKED CLOUD");
-    // window.location = "/cloud";
+    window.location = "/cloud";
   }
 }
 

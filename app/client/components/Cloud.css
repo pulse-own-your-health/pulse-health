@@ -1,1 +1,23 @@
+.pulse-orga-heading {
+  text-align: center;
+}
 
+.pulse-radio {
+  padding: 3px 8px !important;
+}
+
+.pulse-radio-active.active {
+  background-color: #69F0AE !important;
+}
+
+.pulse-radio-active.active > .pulse-active-icon {
+  background-color: #69F0AE !important;
+}
+
+.pulse-radio-inactive.active {
+  background-color: #d66b80 !important;
+}
+
+.pulse-radio-inactive.active > .pulse-inactive-icon {
+  background-color: #d66b80 !important;
+}
